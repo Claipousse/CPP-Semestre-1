@@ -1,5 +1,8 @@
 #ifndef TP3_H
 #define TP3_H
+#include <iostream>
+#include <iomanip>
+
 void Exercice1();
 void Exercice2();
 void Exercice3();

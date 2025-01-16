@@ -1,5 +1,4 @@
 #include "tp3.h"
-#include <iostream>
 using namespace std;
 
 void Exercice1() {
@@ -29,7 +28,7 @@ void Exercice2() {
 }
 
 void Exercice3() {
-    int const multiple(3);
+    int constexpr multiple(3);
     int n(0);
     cout << "Saisissez un entier N :";
     cin >> n;
@@ -123,6 +122,30 @@ void Exercice5() {
             cout << "Choix saisit incorrect..." << endl;
         break;
     }
+}
+
+void Exercice6() {
+    double note1(0), note2(0), note3(0), moyenne(0);
+    //Saisie de la premiere note
+    do {
+        cout << "Saisissez la 1ere note :";
+        cin >> note1;
+        cin.ignore();
+    } while (note1 < 0 or note1 > 20);
+    //Saisie de la deuxieme note
+    do {
+        cout << "Saisissez la 2eme note :";
+        cin >> note2;
+        cin.ignore();
+    } while (note2 < 0 or note2 > 20);
+    //Saisie de la troisieme note
+    do {
+        cout << "Saisissez la 3eme note :";
+        cin >> note3;
+        cin.ignore();
+    } while (note3 < 0 or note3 > 20);
+    moyenne = (note1 + note2 + note3) / 3;
+    cout << fixed << setprecision(2) << "La moyenne est de : " << moyenne << endl;
 }
 
 

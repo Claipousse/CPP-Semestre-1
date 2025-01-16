@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/cleme/Desktop/C++/TP3/Exercice 1/cmake-build-debug",
-		"source" : "C:/Users/cleme/Desktop/C++/TP3/Exercice 1"
+		"build" : "C:/Users/cleme/Desktop/C++/TP3/cmake-build-debug",
+		"source" : "C:/Users/cleme/Desktop/C++/TP3"
 	},
 	"version" : 
 	{
