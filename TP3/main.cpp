@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-    Exercice6();
+    Exercice7();
     return 0;
 }

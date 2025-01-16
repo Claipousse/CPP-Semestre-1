@@ -148,4 +148,28 @@ void Exercice6() {
     cout << fixed << setprecision(2) << "La moyenne est de : " << moyenne << endl;
 }
 
+void Exercice7() {
+    int nb_classes(0), nb_eleves(0), nb_eleves_total(0);
+    cout << "Saisissez le nombre de classes :";
+    cin >> nb_classes;
+    cin.ignore();
+    for (int i = 0; i < nb_classes; i++) {
+        cout << "Saisissez le nombre de eleves de la classe " << i+1 << " : ";
+        cin >> nb_eleves;
+        nb_eleves_total += nb_eleves;
+    }
+    cout << "Le nombre total d'eleves est de : "<< nb_eleves_total << endl;
+}
 
+void Exercice8() {
+    int n(0);
+    do {
+        cout << "Saisissez un nombre multiple de 7 et 2 :";
+        cin >> n;
+        cin.ignore();
+        if (n % 2 != 0 || n % 7 != 0) {
+            cout << "Reponse incorrecte !" << endl;
+        }
+    } while (n % 2 != 0 || n % 7 != 0);
+    cout << n << " est multiple de 2 et 7." << endl;
+}
