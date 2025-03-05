@@ -173,3 +173,35 @@ void Exercice8() {
     } while (n % 2 != 0 || n % 7 != 0);
     cout << n << " est multiple de 2 et 7." << endl;
 }
+
+void Exercice9() {
+    int nb_pierres = 0;
+    int etages = 0;
+    cout << "Combien de pierres y a t'il ?" <<endl;
+    cin >> nb_pierres;
+
+    if (nb_pierres == 0) {
+        cout << "Avec aucune pierres il est impossible de faire un etage..." << endl;
+        return;
+    }
+
+    for (int i = 1; nb_pierres >= i*i; i++) {
+        nb_pierres = nb_pierres - i*i;
+        etages++;
+    }
+    cout << "Il reste "<<nb_pierres<<" pierres, "<<etages<<" etages on etait realises"<<endl;
+}
+
+void Exercice10() {
+    float n, somme = 0;
+    float i = 0;
+    while(true) {
+        cout << "Saisissez un nombre positif (pour arreter la saisie, un nombre negatif) :";
+        cin >> n;
+        if (n < 0) break;
+        somme += n;
+        i++;
+    }
+    float moyenne = somme / i;
+    cout << "La moyenne des nombres positifs saisis est de : "<<moyenne << endl;
+}
